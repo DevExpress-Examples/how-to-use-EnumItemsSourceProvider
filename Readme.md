@@ -6,7 +6,7 @@
 To show only certain values from your Enum data type, you need to define them separated by the space, comma, or semicolon symbol in the **WhiteList** property.
 
 * **C#:**
-```
+```cs
 public enum UserRole { Administrator, Moderator, User, Director, Manager, Developer, Linguist, ProductManager }
 
 public class UserRoleExtension: MarkupExtension {
@@ -17,7 +17,7 @@ public class UserRoleExtension: MarkupExtension {
 ```
 
 * **XAML:**
-```
+```xaml
 <dx:EnumItemsSourceProvider x:Key="RolesSource"
                       WhiteList="Administrator,Moderator,User"
                       EnumInstance="{local:UserRole}"/>
